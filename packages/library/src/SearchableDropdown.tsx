@@ -33,6 +33,7 @@ export function SearchableDropdown<T extends TDropdownOption, G>({
 	dropdownOptionNoMatchLabel = "No Match",
 	dropdownNoOptionsLabel = "No options provided",
 	createNewOptionIfNoMatch = true,
+	createNewOptionLabelPrefix = "Create new: ",
 	offset: offsetValue = 5,
 	strategy = "absolute",
 	groupContent = undefined,
@@ -62,21 +63,17 @@ export function SearchableDropdown<T extends TDropdownOption, G>({
 		(matchingOptions: TDropdownOption[], currentSearchQuery: string) => {
 			if (!createNewOptionIfNoMatch) return undefined;
 
-			const searchQueryNormalized = currentSearchQuery.toLocaleLowerCase();
-			const exactMatchFound = matchingOptions.some(
-				(option) => getLabelFromOption(option).toLocaleLowerCase() === searchQueryNormalized,
-			);
-
-			if (!exactMatchFound) {
+			// Only show "create new" option when there are no matching options
+			if (matchingOptions.length === 0) {
 				return {
-					label: `Create New: ${currentSearchQuery}`,
+					label: `${createNewOptionLabelPrefix}${currentSearchQuery}`,
 					value: currentSearchQuery,
 					isNewValue: true as const,
 				};
 			}
 			return undefined;
 		},
-		[createNewOptionIfNoMatch],
+		[createNewOptionIfNoMatch, createNewOptionLabelPrefix],
 	);
 
 	const core = useSearchableDropdownCore({
@@ -248,9 +245,8 @@ export function SearchableDropdown<T extends TDropdownOption, G>({
 				<DropdownIcon toggled={core.showDropdownOptions} />
 			) : (
 				<DropdownIconDefault
-					className={`${classNameTriggerIcon} ${
-						!core.showDropdownOptions ? classNameTriggerIconInvert : ""
-					}`}
+					className={`${classNameTriggerIcon} ${!core.showDropdownOptions ? classNameTriggerIconInvert : ""
+						}`}
 				/>
 			)}
 

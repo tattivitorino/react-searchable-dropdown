@@ -1,19 +1,19 @@
 .lda-searchable-dropdown {
   /* Colors */
-  --color-background: rgb(9, 9, 11);
-  --color-disabled: rgb(20, 20, 24);
-  --color-border: rgba(255, 255, 255, 0.1);
+  --color-background: rgb(255, 255, 255);
+  --color-disabled: rgb(245, 245, 245);
+  --color-border: rgba(0, 0, 0, 0.12);
   --color-focus: #ef4723;
-  --color-text: rgba(255, 255, 255, 0.9);
-  --color-text-secondary: rgba(255, 255, 255, 0.4);
-  --color-chip-bg: rgba(255, 255, 255, 0.1);
-  --color-chip-hover: rgba(255, 255, 255, 0.15);
-  --color-chip-close-hover-bg: rgba(255, 255, 255, 0.2);
-  --color-chip-close-hover-text: rgba(255, 255, 255, 0.9);
-  --color-option-hover: rgba(255, 255, 255, 0.06);
-  --color-option-selected: rgba(239, 71, 35, 0.15);
-  --color-option-group: rgba(239, 71, 35, 0.12);
-  --color-option-disabled: rgba(255, 255, 255, 0.02);
+  --color-text: #111827;
+  --color-text-secondary: #6b7280;
+  --color-chip-bg: rgba(0, 0, 0, 0.08);
+  --color-chip-hover: rgba(0, 0, 0, 0.12);
+  --color-chip-close-hover-bg: rgba(0, 0, 0, 0.16);
+  --color-chip-close-hover-text: rgba(0, 0, 0, 0.87);
+  --color-option-hover: rgba(0, 0, 0, 0.04);
+  --color-option-selected: rgba(239, 71, 35, 0.1);
+  --color-option-group: rgba(0, 0, 0, 0.06);
+  --color-option-disabled: rgba(0, 0, 0, 0.02);
 
   /* Spacing */
   --spacing-xs: 2px;

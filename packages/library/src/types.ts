@@ -29,13 +29,13 @@ export type TSearchOptionKeys<T extends TDropdownOption> = T extends {
 
 export type TGroups<T extends TDropdownOption, G> =
 	| {
-			handleGroups: (matchingOptions: T[]) => { groupCounts: number[]; groupCategories: string[] };
-			groupContent: (index: number, groupCategories: string[], context: G) => React.ReactNode;
-	  }
+		handleGroups: (matchingOptions: T[]) => { groupCounts: number[]; groupCategories: string[] };
+		groupContent: (index: number, groupCategories: string[], context: G) => React.ReactNode;
+	}
 	| {
-			handleGroups?: undefined;
-			groupContent?: undefined;
-	  };
+		handleGroups?: undefined;
+		groupContent?: undefined;
+	};
 
 type TCommonClasses = {
 	classNameSearchableDropdownContainer?: string;
@@ -63,6 +63,7 @@ type TSearchableBase<T extends TDropdownOption, G> = {
 	dropdownOptionsHeight?: number;
 	dropdownNoOptionsLabel?: string;
 	createNewOptionIfNoMatch?: boolean;
+	createNewOptionLabelPrefix?: string;
 	dropdownOptionNoMatchLabel?: string;
 	disabled?: boolean;
 	offset?: number;
