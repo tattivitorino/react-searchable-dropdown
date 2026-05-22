@@ -1,0 +1,2 @@
+export declare function useResetSuppressMouseEnterOption(dropdownOptionNavigationIndex: number, suppressMouseEnterOptionListener: boolean, setSuppressMouseEnterOptionListener: (suppress: boolean) => void, delay?: number): void;
+//# sourceMappingURL=useResetSuppressMouseEnterOption.d.ts.map

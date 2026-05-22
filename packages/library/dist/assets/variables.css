@@ -1,0 +1,48 @@
+.lda-searchable-dropdown {
+  /* Colors */
+  --color-background: rgb(255, 255, 255);
+  --color-disabled: rgb(245, 245, 245);
+  --color-border: rgba(0, 0, 0, 0.12);
+  --color-focus: #ef4723;
+  --color-text: #111827;
+  --color-text-secondary: #6b7280;
+  --color-chip-bg: rgba(0, 0, 0, 0.08);
+  --color-chip-hover: rgba(0, 0, 0, 0.12);
+  --color-chip-close-hover-bg: rgba(0, 0, 0, 0.16);
+  --color-chip-close-hover-text: rgba(0, 0, 0, 0.87);
+  --color-option-hover: rgba(0, 0, 0, 0.04);
+  --color-option-selected: rgba(239, 71, 35, 0.1);
+  --color-option-group: rgba(0, 0, 0, 0.06);
+  --color-option-disabled: rgba(0, 0, 0, 0.02);
+
+  /* Spacing */
+  --spacing-xs: 2px;
+  --spacing-sm: 4px;
+  --spacing-md: 8px;
+  --spacing-lg: 12px;
+  --spacing-xl: 16px;
+  --spacing-xxl: 20px;
+
+  /* Sizes */
+  --width-container: 300px;
+  --height-input: 40px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 6px;
+  --border-radius-circle: 50%;
+
+  /* Typography */
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+
+  /* Transitions */
+  --transition-fast: 0.1s;
+  --transition-base: 0.15s;
+
+  /* Z-index */
+  --z-dropdown: 10;
+
+  /* Shadows */
+  --shadow-focus: 0 0 0 2px rgba(239, 71, 35, 0.2);
+  --shadow-dropdown: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.2);
+  --shadow-button: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,2 @@
+export declare function useOnMouseEnterOptionHandler(suppressMouseEnterOptionListener: boolean, setDropdownOptionNavigationIndex: (index: number) => void): (index: number) => void;
+//# sourceMappingURL=useOnMouseEnterOptionHandler.d.ts.map
